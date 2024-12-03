@@ -1,0 +1,29 @@
+{
+  "name": "@lang-engine/lang-engine-node",
+  "version": "0.1.0",
+  "description": "A simple math library",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "math",
+    "addition"
+  ],
+  "author": "Shanika Wijerathna",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "esbuild": "^0.20.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.1"
+  },
+  "bin": {
+    "generate-config": "dist/scripts/generateConfig.js"
+  }
+}
