@@ -24,6 +24,7 @@
     "tsx": "^4.7.1"
   },
   "bin": {
-    "generate-config": "dist/scripts/generateConfig.js"
+    "generate-config": "dist/scripts/generateConfig.js",
+    "generate-types": "dist/scripts/generateTypes.js"
   }
 }

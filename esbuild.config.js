@@ -9,7 +9,11 @@ if (!fs.existsSync("dist")) {
 
 // Build TypeScript files
 esbuild.buildSync({
-  entryPoints: ["src/main.ts", "src/scripts/generateConfig.ts"],
+  entryPoints: [
+    "src/main.ts",
+    "src/scripts/generateConfig.ts",
+    "src/scripts/generateTypes.ts",
+  ],
   bundle: true,
   platform: "node",
   target: "node14",
