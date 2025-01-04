@@ -19,6 +19,8 @@ function generateInputType(input: any): string {
       return "boolean";
     case "select":
       return input.multiple ? "string[]" : "string";
+    case "secret":
+      return "string";
     case "array":
       if (typeof input.itemsType === "string") {
         return `${input.itemsType}[]`;

@@ -4,7 +4,14 @@
 export interface BaseInput {
   name: string;
   displayName?: string;
-  type: "string" | "number" | "array" | "boolean" | "object" | "select";
+  type:
+    | "string"
+    | "number"
+    | "array"
+    | "boolean"
+    | "object"
+    | "select"
+    | "secret";
   required: boolean;
 }
 
@@ -52,6 +59,12 @@ export interface ArrayInput extends BaseInput {
   itemsType: "string" | "number" | "boolean" | "select" | InputConfig;
 }
 
+// New Secret input type for sensitive data
+export interface SecretInput extends BaseInput {
+  type: "secret";
+  isMultiline?: boolean;
+}
+
 // Union type for all possible inputs
 export type InputConfig =
   | StringInput
@@ -59,7 +72,8 @@ export type InputConfig =
   | BooleanInput
   | ObjectInput
   | ArrayInput
-  | SelectInput;
+  | SelectInput
+  | SecretInput;
 
 export interface FunctionConfig {
   name: string;

@@ -10,7 +10,7 @@ if (!fs.existsSync("dist")) {
 // Build TypeScript files
 esbuild.buildSync({
   entryPoints: [
-    "src/main.ts",
+    "src/index.ts",
     "src/scripts/generateConfig.ts",
     "src/scripts/generateTypes.ts",
   ],
