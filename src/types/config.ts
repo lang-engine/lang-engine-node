@@ -51,12 +51,14 @@ export interface SelectOption {
 export interface ObjectInput extends BaseInput {
   type: "object";
   fields: InputConfig[];
+  mappable?: boolean;
 }
 
 // Array input that can contain nested InputConfigs or primitive types
 export interface ArrayInput extends BaseInput {
   type: "array";
   itemsType: "string" | "number" | "boolean" | "select" | InputConfig;
+  mappable?: boolean;
 }
 
 // New Secret input type for sensitive data

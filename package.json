@@ -1,7 +1,7 @@
 {
   "name": "@lang-engine/lang-engine-node",
-  "version": "1.0.2",
-  "description": "A simple math library",
+  "version": "1.0.3",
+  "description": "Lang Engine Node",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -10,11 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "math",
-    "addition"
+    "lang-engine",
+    "lang-engine-node"
   ],
   "author": "Shanika Wijerathna",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@types/node": "^20.17.6",
     "esbuild": "^0.20.1",
